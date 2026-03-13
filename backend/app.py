@@ -5,7 +5,7 @@ import numpy as np
 
 # Initialize Flask app
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": ["http://localhost:5173"]}})
+CORS(app, resources={r"/*": {"origins": ["https://machine-failure-prediction-lemon.vercel.app"]}})
 
 # Load trained model
 model = joblib.load("./machine_failure_model.pkl")
